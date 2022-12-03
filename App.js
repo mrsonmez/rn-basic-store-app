@@ -1,20 +1,33 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View, Text, SafeAreaView } from "react-native";
+import { Provider } from "react-redux";
+import Header from "./Components/Header/Header";
+import SearchButton from "./Components/SearchButton/SearchButton";
+import { store } from "./redux/store/store";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Provider store={store}>
+      <SafeAreaView style={styles.container}>
+        <Text style={styles.title}>PATIKASTORE</Text>
+        <View>
+          <SearchButton />
+          <Header />
+        </View>
+      </SafeAreaView>
+    </Provider>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+  },
+  title: {
+    fontSize: 30,
+    width: "100%",
+    fontWeight: "bold",
+    color: "purple",
+    marginLeft: 10,
   },
 });
