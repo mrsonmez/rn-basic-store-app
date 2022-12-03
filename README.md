@@ -1,3 +1,5 @@
+![photoofapp](./musicapp.png)
+
 ## About
 
 This project is Simple Store App in react-native with redux
