@@ -9,6 +9,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#eceff1",
     fontWeight: "100",
   },
+  container: {
+    justifyContent: "center",
+    alignItems: "center",
+  },
 });
 
 export default styles;

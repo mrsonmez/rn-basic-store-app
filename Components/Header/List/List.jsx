@@ -1,6 +1,4 @@
 import { View, Text, StyleSheet, Image, Dimensions } from "react-native";
-import React from "react";
-
 const dimen = Dimensions.get("window");
 export default function List({ id, imgURL, title, inStock, price }) {
   return (

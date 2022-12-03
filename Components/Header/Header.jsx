@@ -1,8 +1,6 @@
 import { View, FlatList, StyleSheet } from "react-native";
-import React from "react";
 import List from "./List/List";
 import { store_data } from "./List/data/data";
-import { StatusBar } from "expo-status-bar";
 import { useSelector } from "react-redux";
 
 export default function Header() {
@@ -10,8 +8,6 @@ export default function Header() {
   const filtered = store_data.filter((item) =>
     item.title.toLowerCase().includes(search.toLowerCase())
   );
-  console.log(filtered);
-  console.log(search);
   const rendered = ({ item }) => {
     return (
       <List
