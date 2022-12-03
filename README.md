@@ -1,4 +1,4 @@
-![photoofapp](./musicapp.png)
+![photoofapp](./rn-patikastore.png)
 
 ## About
 
