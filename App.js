@@ -8,7 +8,7 @@ export default function App() {
   return (
     <Provider store={store}>
       <SafeAreaView style={styles.container}>
-        <Text style={styles.title}>PATIKASTORE</Text>
+        <Text style={styles.title}>STORE</Text>
         <View>
           <SearchButton />
           <Header />

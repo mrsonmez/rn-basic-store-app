@@ -1,4 +1,6 @@
-![photoofapp](./rn-patikastore.png)
+| Top                          | Bottom                     |
+| ---------------------------- | -------------------------- |
+| ![top](./rn-patikastore.png) | ![bottom](./rn-bottom.png) |
 
 ## About
 
